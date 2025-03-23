@@ -3,9 +3,13 @@ In questo progetto, ho sviluppato un sistema di gestione delle prenotazioni dell
 Classi
 
 Aula: Questa è una classe astratta che rappresenta un'aula generica dell'università. Ha attributi come nome, capienza e dotazioni. Inoltre, contiene un metodo astratto getTipo() per ottenere il tipo di aula e un secondo costruttore che prende in input dotazioni aggiuntive. Le classi AulaBiologia, AulaInformatica e AulaSemplice sono sottoclassi di Aula che rappresentano tipi specifici di aule con le loro dotazioni predefinite.
+
 Docente: Questa classe rappresenta un docente dell'università. Ha attributi come nome, cognome e una matricola che viene assegnata in modo automatico dal sistema.
+
 Prenotazioni: Questa classe rappresenta una prenotazione, infatti dati la data, l’orario d’inizio, l’orario di fine, un’aula e un docente, genera una prenotazione.
+
 GestorePrenotazioni: Questa classe è responsabile della gestione delle prenotazioni delle aule. Contiene una lista di prenotazioni, una lista di aule e un vettore di docenti. È possibile aggiungere aule e docenti alla lista corrispondente. Inoltre, è possibile aggiungere prenotazioni alla lista di prenotazioni, ma solo se non esistono prenotazioni conflittuali con aule e orari già prenotati. Inoltre, con il metodo serchAula è possibile cercare le aule libere con diversi parametri e con i metodi SavetoFile e LoadFromFile è possibile salvare e caricare i dati.
+
 Report: Questa è una classe annidata all’interno della classe GestorePrenotazioni, essa permette di generare dei report delle prenotazioni contenute nel GestorePrenotazioni, selezionando una data e un’aula o un docente.
 
 Il programma offre le seguenti funzionalità principali:
